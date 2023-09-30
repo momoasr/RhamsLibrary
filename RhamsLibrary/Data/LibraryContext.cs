@@ -1,6 +1,10 @@
-﻿namespace RhamsLibrary.Data
+﻿using Microsoft.EntityFrameworkCore;
+namespace RhamsLibrary.Data
 {
-    public class LibraryContext
+    public class LibraryContext: DbContext
     {
+        public LibraryContext(DbContextOptions<LibraryContext> options)
+        : base(options) { }
+        public DbSet<Book> Books { get; set; }
     }
 }
