@@ -13,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddDbContext<LibraryContext>(
-    options => options.UseSqlServer("Data Source=.;Initial Catalog=MyPrivateLibrary;Integrated Security=True;TrustServerCertificate=True"));
+    options => options.UseSqlServer("Data Source=.;Initial Catalog=RhamPrivateLibrary;Integrated Security=True;TrustServerCertificate=True"));
 
 var app = builder.Build();
 
