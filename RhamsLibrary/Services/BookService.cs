@@ -18,10 +18,10 @@ namespace RhamsLibrary.Services
             _db.SaveChanges();
             return book;
         }
-        public void removeBook(string title)
+        public void removeBook(Book book)
         {
             var b = _db.Books
-            .FirstOrDefault(x => x.Title == title);
+            .FirstOrDefault(x => x.Title == book.Title);
             if (b != null)
             {
                 _db.Books.Remove(b);
