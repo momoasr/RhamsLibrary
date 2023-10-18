@@ -11,7 +11,7 @@ using RhamsLibrary.Data;
 namespace RhamsLibrary.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20231017013335_InitialMigration")]
+    [Migration("20231017044004_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
